@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/ae68925680.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT  US</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONATCT  US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Conatct Us</h1>
+    </section>
+
+<!----Conatct Us---->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.8331306620735!2d-123.24818248489575!3d49.260608680256404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548672cc2fd41e03%3A0xc79dd4e7732aa2f3!2sThe%20University%20of%20British%20Columbia!5e0!3m2!1sen!2sbd!4v1633599900672!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<!--Contact INFO-->
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fas fa-home"></i>
+                <span>
+                    <h5>The University of British Columbia</h5>
+                    <p>Vancouver, BC V6T 1Z4, Canada</p>
+                </span>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>
+                <span>
+                    <h5>+16048222211</h5>
+                    <p>Monday to Saturday , 10AM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="far fa-envelope"></i>
+                <span>
+                    <h5>ubc@gmail.com</h5>
+                    <p>E-mail us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="">
+                <input type="text" placeholder="Enter your name" required>
+                <input type="email" placeholder="Enter your Email Address" required>
+                <input type="text" placeholder="Enter your Subject">
+                <textarea rows="8" placeholder="Message" ></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa sequi <br/> provident laborum minima, dolores nemo illum.</p>
+    <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="far fa-heart"></i> by Sinthia </p>
+</section>
+
+<!--Javascript for Toggle Menu-->
+
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu() {
+        navLinks.style.right = "0" ;
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px" ;
+    }
+
+</script>
+
+</body>
+</html>
